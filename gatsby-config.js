@@ -32,13 +32,6 @@ module.exports = {
         path: `${__dirname}/static`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/posts`
-      },
-    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
