@@ -1,56 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
     body {
-        --black-01: #212121;
-        --black-02: #444444;
-        --gray-01: #666666;
-        --gray-02: #aaaaaa;
-        --gray-03: #f4f4f4;
-        --white: #ffffff;
-
         * {
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
-
-    }
-
-    body.light {
-        --themeColor: #818c83;
-        --toolbarBackground: #212121;
-
-        --text: #212121;
-        --highlight: #3d2c40;
-        --recommendedBackground: #f4f4f4;
-        --recommendedColor: #aaaaaa;
-        --background: #ffffff;
-        --postBackground: #ffffff;
-
-        --hamburgerColor: #818c83;
-
-        background: var(--background);
-
-        --lightbulb-color: #ffd500;
-    }
-
-    body.dark {
-        --themeColor: #3d2c40;
-        --toolbarBackground: #1a111a;
-
-        --text: #ffffff;
-        --highlight: #ffffff;
-        --recommendedBackground: #261a26;
-        --recommendedColor: #ffffff;
-        --background: #3d2c40;
-        --postBackground: #261a26;
-
-        --hamburgerColor: #261a26;
-
-        background: var(--background);
-
-        --lightbulb-color: rgba(255, 255, 255, .5);
     }
 
     html, body, div, span, applet, object, iframe,

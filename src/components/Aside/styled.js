@@ -7,10 +7,10 @@ export const AsideWrapper = styled.aside`
     width: 100vw;
     position: fixed;
     top: 0;
-    left: -110%;
+    right: -110%;
     transition: left .5s ease-in-out, background-color .2s;
     font-family: 'Raleway', sans-serif;
-    background: var(--toolbarBackground);
+    background: #000;
 
     display: flex;
     align-items: center;
@@ -21,29 +21,13 @@ export const AsideWrapper = styled.aside`
     z-index: 4;
 
     @media screen and (min-width: 768px) {
-        width: 20rem;
-        left: 0;
+        width: 15rem;
+        right: 0;
     }
 
     &.shown {
-        left: 0;
+        right: 0;
     }
-`;
-
-export const AsideBackgroundDark = styled.div`
-    background-image: url('/assets/img/background-sidebar-dark.jpg');
-    background-color: rgba(61, 44, 64, .5);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-`;
-
-export const AsideBackgroundLight = styled.div`
-    background-image: url('/assets/img/background-sidebar-light.jpg');
-    background-color: #818c83;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
 `;
 
 export const MenuWrapper = styled.div`
@@ -55,16 +39,6 @@ export const MenuWrapper = styled.div`
     @media screen and (max-width: 576px) {
         justify-content: flex-start;
     }
-`;
-
-export const ThemeToggleWrapper = styled.div`
-    margin-top: 1rem;
-`;
-
-export const ProfileWrapper = styled.div`
-    display: block;
-    text-align: center;
-    color: var(--white);
 `;
 
 export const Hamburger = styled(HamburgerSpin)`

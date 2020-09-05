@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Guilherme Ramos`,
-    name: `Guilherme Ramos`,
-    position: `Desenvolvedor Front End`,
-    description: `Cristão, desenvolvedor, fotógrafo e músico. Escrevo sobre o que imaginar que possa agregar algum valor 🧙🏻‍♂️`,
-    author: `@guilherme`,
+    title: `Elion Quintiliano 🎬`,
+    name: `Elion Quintiliano`,
+    position: `filmmaker & designer`,
+    description: `Filmmaker, designer e músico. Jovem, profissional e ensinavel. Apaixonado por comunicar através do que faço.`,
+    author: `@elion`,
     lang: `pt-br`,
-    siteUrl: 'https://ramosht.com/',
+    siteUrl: 'https://elionquintiliano.com/',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -48,6 +48,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `portfolio`,
+        path: `${__dirname}/portfolio`
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -81,13 +88,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Guilherme Ramos`,
-        short_name: `ramosht`,
+        name: `Elion Quintiliano`,
+        short_name: `elionquintiliano`,
         start_url: `/`,
-        background_color: `#3D2C40`,
-        theme_color: `#3D2C40`,
+        background_color: `#000`,
+        theme_color: `#000`,
         display: `minimal-ui`,
-        icon: `src/images/profile-photo.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/elion_quintiliano.ico`, // This path is relative to the root of the site.
       },
     },
     {

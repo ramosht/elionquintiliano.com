@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import {useMediaQuery} from 'react-responsive'
 
 import PropTypes from "prop-types"
@@ -10,19 +10,26 @@ import GlobalStyle from "../../styles/global"
 import * as s from "./styled"
 
 
-const Layout = ({ children }) => {
+const Layout = ({ children, style }) => {
   const [ asideState, setAsideState ] = useState(false);
+  const [ page, setPage ] = useState('');
   const isMobile = useMediaQuery({query: '(max-width: 767px)'});
 
+  useEffect(() => {
+    let currentPage = window.location.pathname;
+    currentPage = currentPage === '/' ? 'home' : currentPage.split('/')[1];
+    setPage(currentPage);
+  }, []) 
+
   return (
-    <s.Layout>
+    <s.Layout style={{ backgroundColor: page === 'about' ? '#fff' : '#000' }}>
       <GlobalStyle />
       
       {isMobile && <LayoutHeaderMobile asideState={asideState} />}
 
       <Aside asideState={asideState} />
       
-      <s.Main>
+      <s.Main style={style}>
         {children}
       </s.Main>
 

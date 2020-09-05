@@ -12,6 +12,12 @@ export const PostHeader = styled.header`
     line-height: 1.15;
     font-weight: 700;
     margin: .5rem auto;
+    transform: rotate(90deg); 
+    display: inline-block;
+    transform-origin: 0 0;
+    left: -2rem;
+    top: 4.75rem;
+    position: relative;
 
     @media screen and (max-width: 1200px) {
       font-size: 2rem;

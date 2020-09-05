@@ -1,12 +1,10 @@
 import styled from 'styled-components'
 
 export const Layout = styled.div`
+    padding-left: 5rem;
+    height: 100vh;
     @media screen and (min-width: 768px) {
-        padding-left: 20rem;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-left: 20rem;    
+        padding-right: 15rem;
     }
 `;
 

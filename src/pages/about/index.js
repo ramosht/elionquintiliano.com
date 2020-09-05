@@ -10,7 +10,7 @@ import SocialLinks from '../../components/SocialLinks'
 import {graphql, useStaticQuery} from 'gatsby';
 import FormatDate from '../../utils/FormatDate';
 
-const Sobre = () => {
+const About = () => {
     const formatDate = new FormatDate();
 
     const { allExperienceJson, allCertificationsJson } = useStaticQuery(
@@ -62,7 +62,7 @@ const Sobre = () => {
 
             <main>
                 <PS.PostHeader>
-                    <h1>Um pouco sobre mim</h1>
+                    <h1>sobre mim</h1>
                 </PS.PostHeader>
                 <PS.MainContent>
                     <div>
@@ -174,4 +174,4 @@ const Sobre = () => {
     )
 }
 
-export default Sobre
+export default About
