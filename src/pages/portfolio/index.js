@@ -5,8 +5,8 @@ import { Header, Button } from './styled'
 import SEO from '../../components/seo'
 import Layout from '../../components/Layout'
 
-import PortfolioFilmmaker from './portfolios/PortfolioFilmmaker'
-import PortfolioDesigner from './portfolios/PortfolioDesigner'
+import PortfolioFilmmaker from '../../components/PortfolioFilmmaker'
+import PortfolioDesigner from '../../components/PortfolioDesigner'
 
 const Portfolio = () => {
     const [ sectionVisible, setSectionVisible ] = useState('filmmaker');
@@ -15,7 +15,7 @@ const Portfolio = () => {
         <Layout>
             <SEO 
                 title="Porfólio" 
-                description="Desenvolvedor JS, fotógrafo, músico e cristão. Saiba mais um pouco sobre mim, minhas experiências, habilidades e informações de contato. 🧙🏻‍♂️"
+                description="Filmmaker, designer e músico. Saiba mais um pouco sobre mim, minhas experiências, habilidades e informações de contato. 🧙🏻‍♂️"
             />
 
             <main style={{color: '#fff'}}>

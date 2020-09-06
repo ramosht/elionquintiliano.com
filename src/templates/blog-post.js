@@ -1,16 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-import RecommendedPost from '../components/RecommendedPost';
-import Comments from '../components/Comments';
 
 import * as S from '../components/Post/styled';
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark;
-
-  const nextPost = pageContext.nextPost;
-  const previousPost = pageContext.previousPost;
 
   return (
     <Layout>
@@ -24,11 +19,6 @@ const BlogPost = ({ data, pageContext }) => {
       <S.MainContent>
         <span dangerouslySetInnerHTML={{__html: post.html}}></span>
       </S.MainContent>
-      <RecommendedPost 
-        nextPost={nextPost}
-        previousPost={previousPost}
-      />
-      <Comments url={post.fields.slug} title={post.frontmatter.title} />
     </Layout>
   )
 }

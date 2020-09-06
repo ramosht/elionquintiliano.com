@@ -64,13 +64,6 @@ module.exports = {
               linkImagesToOriginal: false,
             }
           },
-          {
-            resolve:"@weknow/gatsby-remark-codepen",
-            options: {
-              theme: "dark",
-              height: 400
-            }
-          },
           `gatsby-remark-lazy-load`,
           `gatsby-remark-prismjs`
         ],
@@ -87,21 +80,15 @@ module.exports = {
         background_color: `#000`,
         theme_color: `#000`,
         display: `minimal-ui`,
-        icon: `src/images/elion_quintiliano.ico`, // This path is relative to the root of the site.
+        icon: `src/images/profile-photo.jpg`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none"
-      }
-    },
-    {
-      resolve: `gatsby-plugin-canonical-urls`,
-      options: {
-        siteUrl: `https://ramosht.com/`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-canonical-urls`,
+    //   options: {
+    //     siteUrl: `https://ramosht.com/`,
+    //   },
+    // },
     `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

@@ -7,13 +7,13 @@ import { Link } from 'gatsby';
 
 const NotFoundPage = () => (
   <>
-  <GlobalStyle />
-  <NotFoutWrapper>
-    <SEO title="Página não encontrada" description="Eita, parece que essa página não existe mais. Mas volte ao blog para encontrar outros posts maneiros." />
-    <h1>Eita, parece que essa página não existe mais</h1>
-    <GoBack to="/">Voltar ao blog</GoBack>
-    <NotFoundImage />
-  </NotFoutWrapper>
+    <GlobalStyle />
+    <NotFoutWrapper>
+      <SEO title="Página não encontrada" description="Eita, parece que essa página não existe mais. Mas volte ao blog para encontrar outros posts maneiros." />
+      <h1>Eita, parece que essa página não existe mais</h1>
+      <GoBack to="/">Voltar ao blog</GoBack>
+      <NotFoundImage />
+    </NotFoutWrapper>
   </>
 );
 

@@ -9,7 +9,7 @@ const Home = () => {
         <Layout style={layoutStyle}>
             <SEO 
                 title="Início" 
-                description="Desenvolvedor JS, fotógrafo, músico e cristão. Saiba mais um pouco sobre mim, minhas experiências, habilidades e informações de contato. 🧙🏻‍♂️"
+                description="Filmmaker, designer e músico. Saiba mais um pouco sobre mim, minhas experiências, habilidades e informações de contato. 🧙🏻‍♂️"
             />
 
             <Wrapper>

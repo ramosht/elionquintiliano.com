@@ -57,7 +57,7 @@ const About = () => {
         <Layout>
             <SEO 
                 title="Sobre mim" 
-                description="Desenvolvedor JS, fotógrafo, músico e cristão. Saiba mais um pouco sobre mim, minhas experiências, habilidades e informações de contato. 🧙🏻‍♂️"
+                description="Filmmaker, designer e músico. Saiba mais um pouco sobre mim, minhas experiências, habilidades e informações de contato. 🧙🏻‍♂️"
             />
 
             <main>

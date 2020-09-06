@@ -15,14 +15,19 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
-     preview: false
+      preview: false
     fields:
       - { 
           label: "Título", 
           name: "title", 
           widget: "string" 
         }
-      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss" }
+      - { 
+          label: "Date", 
+          name: "date", 
+          widget: "datetime", 
+          format: "YYYY-MM-DD hh:mm:ss" 
+        }
       - { 
           label: "Descrição", 
           name: "description", 

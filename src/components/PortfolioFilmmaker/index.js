@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { PortfolioContainer, PortfolioItem } from '../../styled'
+import { PortfolioContainer, PortfolioItem } from '../../pages/portfolio/styled'
 
-import PortfolioModal from '../../../../components/PortfolioModal'
+import PortfolioModal from '../PortfolioModal'
 
 const PortfolioFilmmaker = () => {
     const [ showModal, setShowModal ] = useState(false);
@@ -21,9 +21,6 @@ const PortfolioFilmmaker = () => {
                 }
             ) {
                 nodes {
-                    fields {
-                        slug
-                    }
                     frontmatter {
                         category
                         description

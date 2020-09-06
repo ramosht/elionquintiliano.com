@@ -1,5 +1,4 @@
 import React, { useCallback } from 'react'
-import { Link } from 'gatsby'
 import { Close } from '@styled-icons/material/Close'
 
 import {
@@ -12,7 +11,7 @@ const PortfolioModal = (props) => {
     const handleCloseModal = useCallback(() => {
         props.setShowModal(false);
         props.setModalData({});
-    }, [])
+    }, [props])
 
     return (
         <PortfolioContainer style={{ display: props.showModal ? 'flex' : 'none' }}>
@@ -21,10 +20,10 @@ const PortfolioModal = (props) => {
                 <h4>{props.title}</h4>
                 <p>{props.description}</p>
                 <img src={props.thumbnail} alt={props.title} />
-                <a href={props.linkProjeto} target="_blank">Ver projeto</a>
+                <a href={props.linkProjeto} rel="noreferrer" target="_blank">Ver projeto</a>
             </PortfolioContent>
         </PortfolioContainer>
     )
 }
 
-export default PortfolioModal;
+export default PortfolioModal
