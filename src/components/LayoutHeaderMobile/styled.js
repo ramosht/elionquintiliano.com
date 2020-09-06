@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {Link} from 'gatsby'
 
 export const HeaderWrapper = styled(Link)`
-    background: var(--toolbarBackground);
+    background: #000;
     transition: background-color .2s;
     padding: 0 1rem;
     height: 5rem;

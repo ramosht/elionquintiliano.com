@@ -27,8 +27,7 @@ const NotFoutWrapper = styled.main`
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
-  background-color: var(--background);
-  padding: 0 2rem;
+   padding: 0 2rem;
   box-sizing: border-box;
 
   h1 {

@@ -6,7 +6,7 @@ import {Wrapper} from './styled'
 
 const Home = () => {
     return (
-        <Layout style={{ height: '100%', display: 'flex', alignItems: 'center' }}>
+        <Layout style={layoutStyle}>
             <SEO 
                 title="Início" 
                 description="Desenvolvedor JS, fotógrafo, músico e cristão. Saiba mais um pouco sobre mim, minhas experiências, habilidades e informações de contato. 🧙🏻‍♂️"
@@ -23,6 +23,14 @@ const Home = () => {
             
         </Layout>
     )
+}
+
+const layoutStyle = {
+    position: 'absolute', 
+    top: '50%', 
+    transform: 'translateY(-50%)',
+    padding: '1rem 0',
+    left: '2rem'
 }
 
 export default Home

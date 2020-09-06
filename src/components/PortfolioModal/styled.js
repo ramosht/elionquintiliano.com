@@ -7,7 +7,7 @@ export const PortfolioContainer = styled.div`
     width: 100vw;
     height: 100vh;
     background: #000;
-    z-index: 10;
+    z-index: 10000000;
 
     display: flex;
     align-items: center;
@@ -65,5 +65,6 @@ export const PortfolioContent = styled.div`
         text-decoration: none;
         padding: .5rem 0;
         border-bottom: 2px dashed #fff;
+        color: #fff;
     }
 `;

@@ -18,7 +18,6 @@ export const ProfileWrapper = styled.div`
 
         span {
             font-size: 0.9rem;
-            // font-weight: 300;
             font-style: italic;
             margin-top: .25rem;
             display: block;

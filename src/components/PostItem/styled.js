@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 
 export const PostItemWrapper = styled(Link)`
   display: block;
-  background: var(--postBackground);
   box-shadow: 0 0 .5rem rgba(0,0,0,0.15);
   border-radius: .25rem;
   text-decoration: none;
@@ -48,28 +47,13 @@ export const PostItemHeader = styled.div`
   display: flex;
   align-items: center;
   font-size: .9rem;
-
-  // @media screen and (max-width: 575px) {
-  //   flex-direction: column;
-  //   align-items: flex-start;
-  // }
-`;
-
-export const PostDate = styled.time`
-  color: var(--text);
 `;
 
 export const PostCategory = styled.span`
-  color: var(--text);
   display: inline-block;
   padding: 0 .5rem;
   margin-left: 1rem;
   font-weight: 700;
-
-  // @media screen and (max-width: 575px) {
-  //   margin: .5rem 0 0 0;
-  //   padding: 0;
-  // }
 `;
 
 export const PostItemTitle = styled.h1`
@@ -77,13 +61,11 @@ export const PostItemTitle = styled.h1`
   line-height: 1.35;
   font-weight: 700;
   margin: 1rem 0 .5rem 0;
-  color: var(--text);
   transition: color .2s;
 `;
 
 export const PostItemDescription = styled.p`
   font-size: 1rem;
-  color: var(--text);
   line-height: 1.15;
   font-weight: 500;
 

@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 export const PostHeader = styled.header`
   padding: 1rem 0 0;
-  color: var(--text);
   margin: auto;	
   max-width: 70rem;
   margin-bottom: 1rem;
+  height: 0;
 
   h1 {
     font-size: 2.5rem;
@@ -16,7 +16,7 @@ export const PostHeader = styled.header`
     display: inline-block;
     transform-origin: 0 0;
     left: -2rem;
-    top: 4.75rem;
+    top: 1rem;
     position: relative;
 
     @media screen and (max-width: 1200px) {
@@ -60,7 +60,7 @@ export const MainContent = styled.section`
   .tags,
   iframe,
   .button-post {
-    color: var(--text);
+  
     font-size: 1.05rem;
     font-weight: 500;
     line-height: 1.7;
@@ -68,10 +68,6 @@ export const MainContent = styled.section`
     @media screen and (max-width: 767px) {
       font-size: 1rem;
     }
-  }
-
-  .gatsby-highlight .plain-text {
-    color: var(--gray-03);
   }
   
   p {
@@ -119,14 +115,11 @@ export const MainContent = styled.section`
   }
 
   blockquote {
-    color: var(--white);
-    border-left: 0.3rem solid var(--highlight);
     padding: 0 1.875rem;
     margin: 3.125rem auto;
   }
 
   hr {
-    border: 1px solid var(--highlight);
     margin: 3rem auto;
   }
 
@@ -207,20 +200,26 @@ export const MainContent = styled.section`
       z-index: 3;
     }
   }
+  
   .gatsby-highlight {
     padding: 0 1.6rem 1.6rem;
   }
+
   .instagram-media {
     margin: 1rem auto !important;
   }
+
   a {
-    border-bottom: 1px dashed var(--highlight);
-    color: var(--text);
+    border-bottom: 1px dashed #000;
+
+    color: #000;
+  
     text-decoration: none;
     transition: opacity 0.5s;
+
     svg {
-      color: var(--white);
     }
+
     &:hover {
       opacity: 0.8;
     }

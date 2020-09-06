@@ -6,7 +6,6 @@ export const ExperienciaWrapper = styled.div`
         margin-bottom: 0;
         line-height: 1.5;
         display: block;
-        color: var(--text)
     }
 
     h3 {

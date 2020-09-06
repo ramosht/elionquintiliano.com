@@ -11,6 +11,10 @@ export const Wrapper = styled.div`
         &-block {
             display: block;
         }
+
+        @media screen and (max-width: 576px) {
+            font-size: 12vw;
+        }
     }
 
     .atuacao {
@@ -18,6 +22,10 @@ export const Wrapper = styled.div`
         position: relative;
         margin-left: 2rem;
         margin-top: 1rem;
+
+        @media screen and (max-width: 576px) {
+            font-size: 1rem;
+        }
 
         &:after,
         &:before {
