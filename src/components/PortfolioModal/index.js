@@ -15,7 +15,13 @@ const PortfolioModal = (props) => {
 
     return (
         <PortfolioContainer style={{ display: props.showModal ? 'flex' : 'none' }}>
-            <button onClick={() => handleCloseModal()} className="closeModal"><Close /></button>
+            <button 
+                onClick={
+                    () => handleCloseModal()
+                } 
+                className="closeModal"
+                aria-label="Fechar modal"
+            ><Close /></button>
             <PortfolioContent>
                 <h4>{props.title}</h4>
                 <p>{props.description}</p>

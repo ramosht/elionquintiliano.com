@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import * as PS from '../../components/Post/styled'
-import { Header, Button } from './styled'
+import { PostHeader, MainContent } from '../../components/Post/styled'
+import styled from 'styled-components'
 
 import SEO from '../../components/seo'
 import Layout from '../../components/Layout'
@@ -19,10 +19,10 @@ const Portfolio = () => {
             />
 
             <main style={{color: '#fff'}}>
-                <PS.PostHeader>
+                <PostHeader>
                     <h1>portfólio</h1>
-                </PS.PostHeader>
-                <Header>
+                </PostHeader>
+                <div>
                     <Button
                         isSelected={ sectionVisible === 'filmmaker' ? true : false }
                         onClick={() => setSectionVisible('filmmaker')}
@@ -32,18 +32,42 @@ const Portfolio = () => {
                         isSelected={ sectionVisible === 'designer' ? true : false }
                         onClick={() => setSectionVisible('designer')}
                     >designer</Button>
-                </Header>
-                <PS.MainContent>
+                </div>
+                <MainContent>
                     { 
                         sectionVisible === 'filmmaker' ?
                             <PortfolioFilmmaker /> :
                             <PortfolioDesigner />
                     }
-                </PS.MainContent>
+                </MainContent>
             </main>
             
         </Layout>
     )
 }
+
+const Button = styled.button`
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    transition: opacity .2s;
+
+    & + button {
+        margin-left: 1rem;
+    }
+
+    &:focus,
+    &:active {
+        outline: none;
+        border: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    opacity: ${ props => props.isSelected === true ? 1 : .5 };
+`;
 
 export default Portfolio

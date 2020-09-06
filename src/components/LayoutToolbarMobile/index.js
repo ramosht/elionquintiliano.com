@@ -19,7 +19,7 @@ const LayoutToolbarMobile = (props) => {
       top: 0,
       behavior: 'smooth'
     });
-  })
+  }, [])
 
   return (
     <ToolbarWrapper>

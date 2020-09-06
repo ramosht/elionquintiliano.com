@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { PortfolioContainer, PortfolioItem } from '../../pages/portfolio/styled'
+import { PortfolioContainer, PortfolioItem } from './styled'
 
 import PortfolioModal from '../PortfolioModal'
 
@@ -41,8 +41,9 @@ const PortfolioFilmmaker = () => {
     return (
         <>
             <PortfolioContainer>
-                {response.allMarkdownRemark.nodes.map(work => (
+                {response.allMarkdownRemark.nodes.map((work, index) => (
                     <PortfolioItem 
+                        key={index}
                         onClick={ 
                             () => handleShowPortfolioModal({
                                 thumbnail: work.frontmatter.thumbnail,

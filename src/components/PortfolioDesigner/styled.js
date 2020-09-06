@@ -1,31 +1,5 @@
 import styled from 'styled-components'
 
-export const Header = styled.div``;
-
-export const Button = styled.button`
-    background: transparent;
-    color: #fff;
-    border: none;
-    font-size: 1.5rem;
-    transition: opacity .2s;
-
-    & + button {
-        margin-left: 1rem;
-    }
-
-    &:focus,
-    &:active {
-        outline: none;
-        border: none;
-    }
-
-    &:hover {
-        cursor: pointer;
-    }
-
-    opacity: ${ props => props.isSelected === true ? 1 : .5 };
-`;
-
 export const PortfolioContainer = styled.section`
     margin-top: 1rem;
     display: grid;

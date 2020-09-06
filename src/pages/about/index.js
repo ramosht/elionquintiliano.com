@@ -1,5 +1,4 @@
 import React from 'react'
-import {uuid} from 'uuidv4'
 import * as PS from '../../components/Post/styled'
 
 import SEO from '../../components/seo'
@@ -75,7 +74,7 @@ const About = () => {
                     <div>
                         <h2>Experiência</h2>
                         
-                        {allExperienceJson.edges.map(item => {
+                        {allExperienceJson.edges.map((item, index) => {
                             const experience = item.node;
 
                             const formattedStartDate = formatDate.formatDate(experience.start_date);
@@ -95,7 +94,7 @@ const About = () => {
                                     location={location}
                                     timeOfService={timeOfService}
                                     description={experience.description}
-                                    key={uuid()}
+                                    key={index}
                                 />
                             )
                         })}
@@ -103,7 +102,7 @@ const About = () => {
 
                     <div>
                         <h2>Cursos e Especializações</h2>
-                        {allCertificationsJson.edges.map(item => {
+                        {allCertificationsJson.edges.map((item, index) => {
                             const certification = item.node;
 
                             const formattedIssueDate = formatDate.formatDate(certification.issue_date);
@@ -116,7 +115,7 @@ const About = () => {
                                     credential_id={certification.credential_id}
                                     credential_url={certification.credential_url}
                                     description={certification.description}
-                                    key={uuid()}
+                                    key={index}
                                 />
                             )
                         })}
