@@ -164,7 +164,7 @@ const About = () => {
 
                     <div className="aboutContato">
                         <SocialLinks iconSize="42px" iconColor="#fff" />
-                        <a className="aboutContatoMail" href="mailto:contato@ramosht.com">contato@ramosht.com</a>
+                        <a className="aboutContatoMail" href="mailto:contato@elionquintiliano.com">contato@elionquintiliano.com</a>
                     </div>
                 </PS.MainContent>
             </main>

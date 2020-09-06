@@ -1,19 +1,15 @@
 const links = [
     {
-        label: 'Linkedin',
-        url: 'https://www.linkedin.com/in/ramosht/'
-    },
-    {
-        label: 'Github',
-        url: 'https://github.com/ramosht'
-    },
-    {
-        label: 'Twitter',
-        url: 'https://twitter.com/ramosht_'
+        label: 'Mail',
+        url: 'contato@elionquintiliano.com'
     },
     {
         label: 'Instagram',
-        url: 'https://instagram.com/ramos_ht'
+        url: 'https://www.instagram.com/elionquintiliano/'
+    },
+    {
+        label: 'Linkedin',
+        url: 'https://www.linkedin.com/in/elion-quintiliano-86438519b/'
     },
 ]
 
