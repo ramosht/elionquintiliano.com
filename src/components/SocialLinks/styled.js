@@ -19,10 +19,9 @@ export const SocialLinksItem = styled.li`
 export const SocialLinksLink = styled.a`
     text-decoration: none;
     transition: color .5s;
-    // margin: 0 .5rem;
 
     svg {
-        fill: ${ props => props.iconColor };
+        fill: #000;
         width: 1.5rem;
         height: 1.5rem;
 

@@ -25,11 +25,8 @@ const Home = () => {
 }
 
 const layoutStyle = {
-    position: 'absolute', 
-    top: '50%', 
-    transform: 'translateY(-50%)',
-    padding: '1rem 0',
-    left: '2rem'
+    display: 'flex',
+    alignItems: 'center'
 }
 
 const Wrapper = styled.div`

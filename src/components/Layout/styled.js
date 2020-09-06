@@ -1,9 +1,12 @@
 import styled from 'styled-components'
 
 export const Layout = styled.div`
-    padding-left: 5rem;
-    min-height: 100vh;
+    min-height: calc(100vh - 76px - 64px);
+    display: flex;
+
     @media screen and (min-width: 768px) {
+        min-height: 100vh;
+        padding-left: 5rem;
         padding-right: 15rem;
     }
 `;
@@ -16,6 +19,5 @@ export const Main = styled.main`
     @media screen and (max-width: 767px) {
         padding: 1rem;
     }
-    margin: auto;
     max-width: 70rem;
 `;

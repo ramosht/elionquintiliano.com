@@ -37,7 +37,7 @@ export const PortfolioContainer = styled.div`
 `;
 
 export const PortfolioContent = styled.div`
-    width: 95%;
+    width: 90%;
     max-width: 40rem;
     display: flex;
     flex-direction: column;
@@ -47,11 +47,20 @@ export const PortfolioContent = styled.div`
 
     h4 {
         font-size: 3rem;
+
+        @media screen and (max-width: 576px) {
+            font-size: 2rem;
+        }
     }
 
     p {
         margin: 1rem 0 0 0;
         font-size: 1.25rem;
+        line-height: 1.5;
+
+        @media screen and (max-width: 576px) {
+            font-size: 1rem;
+        }
     }
 
     img {

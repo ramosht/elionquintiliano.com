@@ -5,22 +5,28 @@ export const PostHeader = styled.header`
   margin: auto;	
   max-width: 70rem;
   margin-bottom: 1rem;
-  height: 0;
 
   h1 {
     font-size: 2.5rem;
     line-height: 1.15;
     font-weight: 700;
     margin: .5rem auto;
-    transform: rotate(90deg); 
     display: inline-block;
-    transform-origin: 0 0;
-    left: -2rem;
-    top: 1rem;
-    position: relative;
-
+    
     @media screen and (max-width: 1200px) {
       font-size: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 762px) {
+    height: 0;
+
+    h1 {
+      transform: rotate(90deg); 
+      transform-origin: 0 0;
+      left: -2rem;
+      top: 1rem;
+      position: relative;
     }
   }
 `
@@ -216,10 +222,7 @@ export const MainContent = styled.section`
   
     text-decoration: none;
     transition: opacity 0.5s;
-
-    svg {
-    }
-
+    
     &:hover {
       opacity: 0.8;
     }
