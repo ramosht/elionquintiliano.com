@@ -1,0 +1,12 @@
+{
+  "company": "Aprecie Filmes",
+  "occupation": "Prestador de serviços",
+  "start_date": "2017-01-01",
+  "end_date": "2020-01-01",
+  "is_current": false,
+  "location": {
+    "city": "Sorocaba",
+    "state": "São Paulo"
+  },
+  "description": "Produção de Vídeo institucional, resumo, short film, teaser, trailer, anúncio, educativo, pedagógico, musical, casamento, animação e eventos em geral. Desde a captação de imagem até edição e finalização."
+}

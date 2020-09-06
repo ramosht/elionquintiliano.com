@@ -1,12 +1,12 @@
 {
   "company": "DOK Despachante",
-  "occupation": "Desenvolvedor Front-end",
-  "start_date": "2019-07-01",
-  "end_date": "2020-05-01",
+  "occupation": "Editor de vídeo e fotografia",
+  "start_date": "2019-01-01",
+  "end_date": "2020-02-01",
   "is_current": false,
   "location": {
     "city": "Sorocaba",
     "state": "São Paulo"
   },
-  "description": "Desenvolvimento e manutenção do front-end das diversas aplicações que compõem o ecossistema da empresa: sistema de checkout, sistema interno, landing pages, email marketing, etc."
+  "description": "Produção de vídeo institucional, animação, corporativo, informativo, campanha, nugget e anúncios. Desde a captação de audio e imagem até a edição e finalização. Fotografia de produto e material interno para artes de mídia social."
 }

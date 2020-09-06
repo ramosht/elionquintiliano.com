@@ -86,7 +86,7 @@ module.exports = {
         background_color: `#000`,
         theme_color: `#000`,
         display: `minimal-ui`,
-        icon: `src/images/profile-photo.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/elion_quintiliano.jpg`, // This path is relative to the root of the site.
       },
     },
     // {

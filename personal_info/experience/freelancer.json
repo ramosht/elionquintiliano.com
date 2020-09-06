@@ -1,0 +1,12 @@
+{
+  "company": "Escene Filmes",
+  "occupation": "Freelancer",
+  "start_date": "2019-01-01",
+  "end_date": "2020-01-01",
+  "is_current": false,
+  "location": {
+    "city": "Sorocaba",
+    "state": "São Paulo"
+  },
+  "description": "Edição e finalização de vídeo de cerimônia completa, teaser, trailer e same day."
+}

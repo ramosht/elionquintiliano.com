@@ -31,6 +31,10 @@ export const PortfolioItem = styled.div`
         object-position: center;
         filter: grayscale(1);
         transition: filter .2s;
+
+        @media screen and (max-width: 576px) {
+            filter: none;
+        }
     }
 
     h1 {

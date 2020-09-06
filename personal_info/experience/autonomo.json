@@ -1,0 +1,12 @@
+{
+  "company": "Autônomo",
+  "occupation": "Designer Gráfico",
+  "start_date": "2015-01-01",
+  "end_date": "2019-01-01",
+  "is_current": false,
+  "location": {
+    "city": "Sorocaba",
+    "state": "São Paulo"
+  },
+  "description": "Criação de logotipos, identidade visual e artes gráficas para igreja, aniversário, casamento, curso, escola, conferência, empresas e diversos nichos e eventos."
+}

@@ -1,0 +1,12 @@
+{
+  "company": "Grupo Destaque ",
+  "occupation": "Auxiliar de design gráfico",
+  "start_date": "2016-01-01",
+  "end_date": "2017-01-01",
+  "is_current": false,
+  "location": {
+    "city": "Sorocaba",
+    "state": "São Paulo"
+  },
+  "description": "Criação de layouts, identidade visual de empresas, edições de vídeo, instalação de adevisos em geral, manuseio de máquina de impressão digital, confecção de placa de sinalização em PVC, refilagem, instalação de molduras e pinturas."
+}

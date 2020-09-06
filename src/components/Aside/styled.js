@@ -8,7 +8,7 @@ export const AsideWrapper = styled.aside`
     position: fixed;
     top: 0;
     right: -110%;
-    transition: left .5s ease-in-out, background-color .2s;
+    transition: right .5s ease-in-out, background-color .2s;
     font-family: 'Raleway', sans-serif;
     background: #000;
 

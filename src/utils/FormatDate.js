@@ -8,7 +8,7 @@ export default class FormatDate {
       
       const formattedDate = format(
         new Date(parsedDate),
-        "MMMM yyyy",
+        "yyyy",
         {locale: pt}
       );
 
