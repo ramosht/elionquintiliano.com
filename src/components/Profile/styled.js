@@ -5,14 +5,14 @@ export const ProfileWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--white);
+    color: #fff;
     padding: 0;
 
     .header {
         h1 {
             font-size: 1.35rem;
             margin-top: .5rem;
-            color: var(--white);
+            color: #fff;
             font-weight: 600;
         }
 
@@ -30,7 +30,7 @@ export const ProfileWrapper = styled.div`
         font-size: 0.95rem;
         line-height: 1.25;
         margin: 1.5rem 0;
-        color: var(--white);
+        color: #fff;
         letter-spacing: 1px;
         text-align: center;
         position: relative;
@@ -43,7 +43,7 @@ export const ProfileWrapper = styled.div`
             transform: translate(-50%, -50%);
             width: 4rem;
             height: 1px;
-            background: var(--white);
+            background: #fff;
             opacity: .35;
         }
         

@@ -1,0 +1,30 @@
+import React, { useCallback } from 'react'
+import { Link } from 'gatsby'
+import { Close } from '@styled-icons/material/Close'
+
+import {
+    PortfolioContainer,
+    PortfolioContent
+} from './styled'
+
+const PortfolioModal = (props) => {
+
+    const handleCloseModal = useCallback(() => {
+        props.setShowModal(false);
+        props.setModalData({});
+    }, [])
+
+    return (
+        <PortfolioContainer style={{ display: props.showModal ? 'flex' : 'none' }}>
+            <button onClick={() => handleCloseModal()} className="closeModal"><Close /></button>
+            <PortfolioContent>
+                <h4>{props.title}</h4>
+                <p>{props.description}</p>
+                <img src={props.thumbnail} alt={props.title} />
+                <a href={props.linkProjeto} target="_blank">Ver projeto</a>
+            </PortfolioContent>
+        </PortfolioContainer>
+    )
+}
+
+export default PortfolioModal;

@@ -1,5 +1,6 @@
 ---
 title: Simplesmente Acontece
+date: 2020-04-28 01:00:55 -0700
 description: Trailer do filme Simplemente Acontece (Love, Rosie)
 category: Filmmaker
 linkProjeto: https://www.youtube.com/watch?v=ZUqU9SQOt10&ab_channel=ImagemFilmes

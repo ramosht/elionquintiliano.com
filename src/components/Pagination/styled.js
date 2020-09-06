@@ -6,11 +6,11 @@ export const PaginationWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 1rem .5rem 1rem;
-  color: var(--text);
+  color: #fff;
   font-size: 1.15rem;
 `;
 
 export const PaginationLink = styled(Link)`
-  color: var(--text);
+  color: #fff;
   text-decoration: none;
 `;

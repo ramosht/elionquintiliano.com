@@ -19,7 +19,7 @@ export const PostPaginationLink = styled(Link)`
   font-weight: 600;
   color: #999;
   flex-grow: 1;
-  color: var(--text);
+  color: #fff;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -27,10 +27,6 @@ export const PostPaginationLink = styled(Link)`
 
   @media screen and (max-width: 576px) {
     width: 100%;
-  }
-
-  &:hover {
-    background-color: var(--postBackground);
   }
 `
 

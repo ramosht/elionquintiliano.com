@@ -33,7 +33,7 @@ const NotFoutWrapper = styled.main`
 
   h1 {
     font-size: 1.5rem;
-    color: var(--text);
+    color: #fff;
   }
 
   height: 100vh;
@@ -41,11 +41,11 @@ const NotFoutWrapper = styled.main`
 
 const GoBack = styled(Link) `
   font-size: 1.5rem;
-  border-bottom: 2px dashed var(--text);
+  border-bottom: 2px dashed #fff;
   display: block;
   margin: 1rem 0 2rem 0; 
   text-decoration: none;
-  color: var(--text);
+  color: #fff;
 `;
 
 export default NotFoundPage;

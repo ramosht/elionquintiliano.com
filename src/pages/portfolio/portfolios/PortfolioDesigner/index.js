@@ -5,7 +5,7 @@ import { PortfolioContainer, PortfolioItem } from '../../styled'
 
 import PortfolioModal from '../../../../components/PortfolioModal'
 
-const PortfolioFilmmaker = () => {
+const PortfolioDesigner = () => {
     const [ showModal, setShowModal ] = useState(false);
     const [ modalData, setModalData ] = useState({});
 
@@ -15,7 +15,7 @@ const PortfolioFilmmaker = () => {
                 filter: {
                     frontmatter: {
                         category: {
-                            eq: "Filmmaker"
+                            eq: "Designer"
                         }
                     },
                 }
@@ -73,4 +73,4 @@ const PortfolioFilmmaker = () => {
     )
 }
 
-export default PortfolioFilmmaker
+export default PortfolioDesigner

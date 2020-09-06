@@ -1,6 +1,5 @@
 import React, {useState, useCallback} from 'react';
 import { Link } from 'gatsby'
-import ThemeToggle from '../ThemeToggle'
 
 import { HouseDoor } from '@styled-icons/bootstrap/HouseDoor'
 import { UpArrowAlt } from '@styled-icons/boxicons-regular/UpArrowAlt'
@@ -29,9 +28,6 @@ const LayoutToolbarMobile = (props) => {
           <Link to='/'>
             <HouseDoor size={24} />
           </Link>
-        </ToolbarItem>
-        <ToolbarItem>
-          <ThemeToggle />
         </ToolbarItem>
         <ToolbarItem onClick={toggleButton}>
           <Hamburger isActive={hamburgerState} barColor="white" buttonWidth={24}  />

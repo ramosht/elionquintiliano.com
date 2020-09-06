@@ -7,7 +7,7 @@ export const ToolbarWrapper = styled.div`
   left: 0;
   width: 100%;
   height: 4rem;
-  background: var(--toolbarBackground);
+  background: #000;
   transition: background-color .2s;
   z-index: 1000000;
 `;
