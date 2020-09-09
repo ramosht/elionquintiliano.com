@@ -1,8 +1,6 @@
 backend:
   name: github
   repo: ramosht/elionquintiliano.com
-  branch: master
-  site_domain: https://ramosht.com/
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
